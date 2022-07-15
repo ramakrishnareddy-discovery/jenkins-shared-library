@@ -323,7 +323,7 @@ def sendEmailNotification(subjectText, bodyText) {
 	
 	//subjectText = "JENKINS Notification : Successful Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'"
 	//bodyText = """ <p>Successful: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]':</p><p>Check console output at "<a href="${env.BUILD_URL}">${env.JOB_NAME} [${env.BUILD_NUMBER}]</a>"</p>"""
-	def mailRecipients = 'r.satti@accenture.com, suresh.kumar.sahoo@accenture.com'
+	def mailRecipients = 'abc@example.com'
 	emailext(
 				subject: subjectText,
 				body: bodyText,
@@ -335,8 +335,7 @@ def sendEmailNotification(subjectText, bodyText) {
 }
 
 def sendNotification(buildStatus) {
-	//def mailRecipients = 'r.satti@accenture.com, sashi.kumar.sharma@accenture.com, shresthi.garg@accenture.com, suresh.kumar.sahoo@accenture.com, s.b.jha@accenture.com';
-	def mailRecipients = 'r.satti@accenture.com, suresh.kumar.sahoo@accenture.com'
+	def mailRecipients = 'example@abc.com'
 
 	/* PRINT ALL ENVIRONMENT VARIABLES
 	 sh 'env > env.txt'
